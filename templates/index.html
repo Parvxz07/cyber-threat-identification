@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Threat Identification System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Cyber Threat Identification System</h1>
+            <p>Paste any message, email, or log text below to check whether it shows signs of a phishing or social-engineering attempt.</p>
+        </header>
+
+        <form method="POST">
+            {% csrf_token %}
+            <textarea name="input_text" rows="6" placeholder="Paste text to analyze...">{% if result %}{{ result.text }}{% endif %}</textarea>
+            <button type="submit">Analyze Text</button>
+        </form>
+
+        {% if result %}
+        <div class="result-card {% if result.label == 'threat' %}threat{% else %}benign{% endif %}">
+            <h2>
+                {% if result.label == 'threat' %}
+                    ⚠️ Potential Threat Detected
+                {% else %}
+                    ✅ Looks Benign
+                {% endif %}
+            </h2>
+            <p>Confidence: <strong>{{ result.confidence }}%</strong></p>
+
+            {% if result.flagged_keywords %}
+            <p>Flagged terms:</p>
+            <ul>
+                {% for kw in result.flagged_keywords %}
+                <li>{{ kw }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>Built with Python, Django &amp; scikit-learn — educational NLP/ML project.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+text,label
+"Your account has been suspended. Click here to verify your password immediately.",threat
+"Congratulations! You have won a free iPhone. Claim your prize now by entering your bank details.",threat
+"Urgent: unusual sign-in activity detected on your account. Confirm your identity now or lose access.",threat
+"Download this attachment to see your invoice.exe file",threat
+"Dear user, your PayPal account will be locked. Login here to avoid suspension.",threat
+"We noticed a login attempt from a new device. Verify now or your account will be deleted in 24 hours.",threat
+"Install this update immediately to fix a critical security vulnerability, click the link below.",threat
+"Your package could not be delivered. Pay a small fee here to reschedule.",threat
+"IT support here, please share your login credentials so we can fix your mailbox.",threat
+"This is the Nigerian prince email offering to transfer millions if you send your bank details first.",threat
+"Hi team, the sprint planning meeting is moved to 3 PM tomorrow.",benign
+"Please find attached the quarterly report for review.",benign
+"Reminder: the office will be closed for the public holiday on Monday.",benign
+"Can you send me the notes from today's stand-up call?",benign
+"The new feature deployment went smoothly, no issues reported.",benign
+"Let's catch up over coffee sometime this week.",benign
+"Attached is the invoice for last month's consulting work.",benign
+"Thanks for your help debugging the API integration yesterday.",benign
+"The weather looks great for the weekend trip we planned.",benign
+"Our next university lecture on data structures is scheduled for Thursday.",benign
+"Please review the pull request when you get a chance.",benign
+"Happy birthday! Hope you have a wonderful day.",benign
+"The client meeting has been rescheduled to next Tuesday at 10 AM.",benign
+"Great job on the presentation today, the client was impressed.",benign
+"Click this link to reset your password because your account has unusual activity from a foreign IP.",threat
+"Verify your bank account now to avoid permanent suspension of your online banking.",threat
+"You have a pending refund, provide your card number to receive it.",threat
+"Security alert: someone tried to access your account from Russia. Confirm your identity immediately.",threat
+"Let's grab lunch after the 2 PM sync.",benign
+"Sharing the updated project roadmap for Q3.",benign

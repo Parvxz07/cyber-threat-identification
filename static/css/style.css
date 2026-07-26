@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1e293b;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    resize: vertical;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.result-card {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid;
+}
+
+.result-card.threat {
+    background: #3b0d0d;
+    border-color: #ef4444;
+}
+
+.result-card.benign {
+    background: #0d3b1a;
+    border-color: #22c55e;
+}
+
+.result-card ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 32px;
+    font-size: 0.8rem;
+    color: #64748b;
+    text-align: center;
+}
